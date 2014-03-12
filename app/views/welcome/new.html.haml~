@@ -1,0 +1,16 @@
+= form_for :restaurant, url: restaurant_index_path method: :post do |f|
+  %p
+    = f.label :restaurant_name
+    = f.text_field :restaurant_name
+  %p
+    = f.label :area
+    = f.text_field :area
+  %p
+    = f.label :address
+    = f.text_area :address
+  %p
+    = f.label :mobile_number
+    = f.text_field :mobile_number
+  %p
+    = f.submit "Create Restaurant"
+  
