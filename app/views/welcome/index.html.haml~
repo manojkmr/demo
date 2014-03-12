@@ -2,4 +2,6 @@
 
 = link_to "Create Restaurant", new_welcome_path
 %br
+= link_to "Restaurants List", restaurant_index_path
+%br
 = link_to "signout", destroy_user_session_path, method: :delete

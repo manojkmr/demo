@@ -1,4 +1,4 @@
-= form_for :restaurant, url: restaurant_index_path method: :post do |f|
+= form_for :restaurant, url: restaurant_index_path do |f|
   %p
     = f.label :restaurant_name
     = f.text_field :restaurant_name
@@ -13,4 +13,6 @@
     = f.text_field :mobile_number
   %p
     = f.submit "Create Restaurant"
+
+= link_to "Back to Home", welcome_index_path
   

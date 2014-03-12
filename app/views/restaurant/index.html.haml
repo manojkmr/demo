@@ -1,0 +1,19 @@
+%h1 List of restaurants
+
+= link_to "Create Restaurant", new_welcome_path
+= link_to "Home Page", welcome_index_path
+
+%table
+  %tr
+    %th Restaurants
+    %th Area
+    %th Address
+    %th Mobile Number
+
+  - @restaurants.each do |r|
+    %tr
+      %td= r.restaurant_name
+      %td= r.area
+      %td= r.address
+      %td= r.mobile_number
+      
